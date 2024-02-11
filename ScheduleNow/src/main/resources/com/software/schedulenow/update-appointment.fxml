@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="765.0" prefWidth="464.0" style="-fx-background-color: #D3D3D3;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.software.schedulenow.controller.updateAppointmentController">
+   <children>
+      <Label fx:id="updateAppointmentLabel" layoutX="128.0" layoutY="14.0" text="Update an Appointment" underline="true">
+         <font>
+            <Font name="Javanese Text" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="titleLabel" layoutX="71.0" layoutY="93.0" text="Title:" />
+      <Label fx:id="typeLabel" layoutX="69.0" layoutY="138.0" text="Type:" />
+      <Label fx:id="descriptionLabel" layoutX="67.0" layoutY="187.0" text="Description:" />
+      <Label fx:id="locationLabel" layoutX="72.0" layoutY="233.0" text="Location:" />
+      <Label fx:id="startDateLabel" layoutX="68.0" layoutY="291.0" text="Start Date:" />
+      <Label fx:id="startTimeLabel" layoutX="67.0" layoutY="332.0" text="Start Time:" />
+      <Label fx:id="endDateLabel" layoutX="69.0" layoutY="399.0" text="End Date:" />
+      <Label fx:id="endTimeLabel" layoutX="69.0" layoutY="434.0" text="End Time:" />
+      <Label fx:id="clientLabel" layoutX="67.0" layoutY="508.0" text="Client:" />
+      <Button fx:id="saveUpdateAppointmentButton" layoutX="134.0" layoutY="692.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="63.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #A9A9A9;" text="Save" onAction="#onSaveUpdateAppointmentButtonClick">
+         <effect>
+            <ColorAdjust brightness="-0.59" contrast="1.0" />
+         </effect>
+      </Button>
+      <Button fx:id="cancelUpdateAppointmentButton" layoutX="254.0" layoutY="692.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="76.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #A9A9A9;" text="Cancel" onAction="#onCancelUpdateAppointmentButton">
+         <effect>
+            <ColorAdjust brightness="-0.58" contrast="1.0" />
+         </effect>
+      </Button>
+      <TextField fx:id="titleText" layoutX="166.0" layoutY="89.0" promptText="Enter Title..." />
+      <TextField fx:id="descriptionText" layoutX="164.0" layoutY="182.0" prefHeight="26.0" prefWidth="255.0" promptText="Enter Description..." />
+      <ComboBox fx:id="typeComboBox" layoutX="166.0" layoutY="134.0" prefWidth="150.0" promptText="Select Type" />
+      <TextField fx:id="locationText" layoutX="165.0" layoutY="229.0" promptText="Enter Location..." />
+      <Label layoutX="68.0" layoutY="352.0" text="(24 Hours)" />
+      <Label layoutX="67.0" layoutY="452.0" text="(24 Hours)" />
+      <DatePicker fx:id="startDatePicker" layoutX="166.0" layoutY="287.0" promptText="Select Start Date  -&gt;" />
+      <Separator layoutX="43.0" layoutY="320.0" prefHeight="5.0" prefWidth="106.0" />
+      <Separator layoutX="45.0" layoutY="421.0" prefHeight="5.0" prefWidth="106.0" />
+      <ComboBox fx:id="startTimeComboBox" layoutX="166.0" layoutY="337.0" prefWidth="150.0" promptText=" Select Time " />
+      <DatePicker fx:id="endDatePicker" layoutX="166.0" layoutY="395.0" promptText="Select End Date -&gt;" />
+      <ComboBox fx:id="endDateComboBox" layoutX="165.0" layoutY="439.0" prefWidth="150.0" promptText="Select Time" />
+      <ComboBox fx:id="clientComboBox" layoutX="166.0" layoutY="504.0" prefWidth="150.0" promptText="Select Client" />
+      <Label fx:id="userLabel" layoutX="70.0" layoutY="560.0" text="User:" />
+      <ComboBox fx:id="userComboBox" layoutX="164.0" layoutY="556.0" prefWidth="150.0" promptText="Select User..." />
+      <Label fx:id="contactLabel" layoutX="62.0" layoutY="622.0" text="Contact:" />
+      <ComboBox fx:id="contactComboBox" layoutX="164.0" layoutY="618.0" prefWidth="150.0" promptText="Select Contact..." />
+   </children>
+</AnchorPane>
